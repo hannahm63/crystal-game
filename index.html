@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crystal Collector</title>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="./assets/javascript/script.js"></script>
+</head>
+
+<body>
+
+    <div class="container jumbotron">
+
+        <!-- Row 1 : Header & Instructions-->
+        <div class="row">
+            <div class="col-lg-12">
+
+                <h1 class="display-4">Crystal Collector</h1>
+
+                <p class="lead">Click on a crystal to collect it! Collect the right combination of crystals to match the
+                    target number to win.</p>
+
+                <hr class="my-4">
+
+            </div>
+        </div>
+
+        <!-- Row 2 : Target and Score-->
+        <div class="row">
+
+            <!-- Target Number -->
+            <div class="col-lg-6 card text-center card-body" style="width: 18rem;">
+                <h3 class="card-title">Target Number</h3>
+                <h3 id="targetNum"></h3>
+            </div>
+
+            <!-- Score -->
+            <div class="col-lg-6 card text-center card-body" style="width: 18rem;">
+                <h3 class="card-title">Crystals Collected</h3>
+                <h3 id="crystalsCollected"></h3>
+            </div>
+        </div>
+        
+        <br>
+
+        <!-- Row 3 : Crystal Images-->
+        <div class="row">
+
+            <!-- Crystal #1 -->
+            <div id="crystal1" class="col-lg-3 card crystal">
+                    <img class="card-img-top" src="./assets/images/red-crystal.jpg">
+            </div>
+
+            <!-- Crystal #2 -->
+            <div id="crystal2" class="col-lg-3 card crystal">
+                    <img class="card-img-top" src="./assets/images/clear-crystal.jpg">
+            </div>
+
+            <!-- Crystal #3 -->
+            <div id="crystal3" class="col-lg-3 card crystal">
+                    <img class="card-img-top" src="./assets/images/colorful-crystal.jpg">
+            </div>
+
+            <!-- Crystal #4 -->
+            <div id="crystal4" class="col-lg-3 card crystal">
+                    <img class="card-img-top" src="./assets/images/orange-crystal.jpg">
+            </div>
+        </div>
+        
+        <br>
+
+        <!-- Row 4 : Wins and Losses-->
+        <div class="row">
+
+            <!-- Wins -->
+            <div class="col-lg-6 card text-center card-body" style="width: 18rem;">
+                <h5 class="card-title">Wins</h5>
+                <h5 id="wins"></h5>
+            </div>
+
+            <!-- Losses -->
+            <div class="col-lg-6 card text-center card-body" style="width: 18rem;">
+                <h5 class="card-title">Losses</h5>
+                <h5 id="losses"></h5>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
